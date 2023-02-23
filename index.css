@@ -5,7 +5,9 @@
   box-sizing: border-box;
   list-style: none;
 }
-
+html {
+  transition: all 0.3s;
+}
 body {
   font-family: "Inter", sans-serif;
 }
@@ -48,7 +50,7 @@ ul {
   justify-content: space-between;
 }
 li {
-  height: calc(100vh - 86px - 0.5rem);
+  height: calc(100vh - 86px - 0.5rem - 50px);
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -79,4 +81,17 @@ li {
   bottom: 0;
   font-size: 0.5rem;
   color: white;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 0.7rem;
+  }
 }
